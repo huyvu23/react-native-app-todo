@@ -4,16 +4,14 @@ import React from "react";
 
 const AuthLayout = () => {
   return (
-    <CustomSafeAreaView>
+    <CustomSafeAreaView
+      style={{
+        backgroundColor: "#fff",
+      }}
+    >
       <Stack
         screenOptions={{
-          headerStyle: {
-            backgroundColor: "#f4511e",
-          },
-          headerTintColor: "#fff",
-          headerTitleStyle: {
-            fontWeight: "bold",
-          },
+          headerShown: false,
         }}
       >
         {/* Không cần định nghĩa tên ở đây, Expo Router tự động xử lý */}
